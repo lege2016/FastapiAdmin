@@ -85,7 +85,7 @@
             </el-col>
             <el-col :span="1.5">
               <el-dropdown v-hasPerm="['{{ module_name }}:{{ business_name }}:batch']" trigger="click">
-                <el-button type="default" :disabled="selectIds.length === 0" icon="ArrowDown">更多</el按钮>
+                <el-button type="default" :disabled="selectIds.length === 0" icon="ArrowDown">更多</el-button>
                 <template #dropdown>
                   <el-dropdown-menu>
                     <el-dropdown-item icon="Check" @click="handleMoreClick(true)">批量启用</el-dropdown-item>
